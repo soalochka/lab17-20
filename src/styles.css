@@ -1,0 +1,417 @@
+/* Лабораторная работа №17-№20 — макет согласно ТЗ.
+   Header — green, ≤5%. Footer — red, ≤6%. Main — 89%.
+   Section — gold 20%, Article — blue 60%, Aside — darkturquoise 20%.
+   Текст чёрный, ссылки оформляются по умолчанию.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  height: 5vh;
+  min-height: 36px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.header-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.logo-text {
+  white-space: nowrap;
+}
+
+.lang-switch {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px 10px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.lang-switch:hover {
+  background: #fff;
+  color: green;
+}
+
+/* ---------- MAIN ---------- */
+.main {
+  height: 89vh;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* SECTION — gold, 20% */
+.section {
+  width: 20%;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.6);
+  color: #000;
+  border: 1px solid #d4ac0d;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.nav-link.active {
+  background: #fff;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background: #fff;
+}
+
+/* ARTICLE — blue, 60% */
+.article {
+  width: 60%;
+  background-color: blue;
+  color: #000;
+  padding: 18px;
+  overflow-y: auto;
+}
+
+.article h1 {
+  color: #000;
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  /* Подложка под заголовок — чтобы чёрный текст оставался читаемым
+     на синем фоне article согласно требованию ТЗ о цвете текста. */
+  background: rgba(255, 255, 255, 0.85);
+  padding: 6px 12px;
+  display: inline-block;
+}
+
+/* Прямые потомки article (h1, p) — подложка для читаемости. */
+.article > div > h1 + p,
+.article > div > p {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 6px 12px;
+  margin: 0 0 12px 0;
+  display: inline-block;
+}
+
+.article p,
+.article li,
+.article td,
+.article th,
+.article label,
+.article span,
+.article div {
+  color: #000;
+}
+
+.article a {
+  /* Ссылки оформляются по умолчанию (требование ТЗ). */
+}
+
+.page-block {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border: 1px solid #fff;
+}
+
+.page-block h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.news-item {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-left: 4px solid gold;
+}
+
+.news-item .news-date {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  background: gold;
+  color: #000;
+  border: 1px solid #000;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.products-table th,
+.products-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.products-table th {
+  background: gold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 460px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+}
+
+.contact-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  padding: 8px 14px;
+  background: gold;
+  color: #000;
+  border: 1px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-thanks {
+  margin-top: 10px;
+  background: #d4edda;
+  color: #155724;
+  padding: 8px 12px;
+  border: 1px solid #155724;
+}
+
+/* ASIDE — darkturquoise, 20% */
+.aside {
+  width: 20%;
+  background-color: darkturquoise;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.tagcloud-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.tagcloud-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tag-size-1 {
+  font-size: 12px;
+}
+.tag-size-2 {
+  font-size: 14px;
+}
+.tag-size-3 {
+  font-size: 16px;
+}
+.tag-size-4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tag:hover {
+  background: #fff;
+}
+
+/* Banner shared style */
+.banner {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border: 1px dashed #000;
+  text-align: center;
+}
+
+.banner-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.banner-text {
+  font-size: 13px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  height: 6vh;
+  min-height: 32px;
+  background-color: red;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 12px;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.footer div {
+  white-space: nowrap;
+  padding: 0 6px;
+}
+
+/* ---------- Адаптивная вёрстка для разрешения 800x600 ---------- */
+@media (max-width: 900px), (max-height: 700px) {
+  .header {
+    height: auto;
+    min-height: 40px;
+    padding: 4px 0;
+  }
+  .logo {
+    font-size: 14px;
+  }
+  .logo-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .main {
+    flex-direction: column;
+    height: auto;
+    flex: 1 1 auto;
+  }
+  .section,
+  .article,
+  .aside {
+    width: 100%;
+    min-height: 120px;
+  }
+  .section {
+    order: 1;
+  }
+  .article {
+    order: 2;
+    min-height: 280px;
+  }
+  .aside {
+    order: 3;
+  }
+  .footer {
+    height: auto;
+    min-height: 50px;
+    flex-direction: column;
+    text-align: center;
+    padding: 6px;
+  }
+  .footer div {
+    padding: 1px 0;
+  }
+}
