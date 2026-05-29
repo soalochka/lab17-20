@@ -16,7 +16,7 @@ body,
   height: 100%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  color: #000;
+  color: rgb(64, 21, 40);
 }
 
 .app {
@@ -26,11 +26,11 @@ body,
   min-height: 100vh;
 }
 
-/* ---------- HEADER ---------- */
+/*HEADER */
 .header {
   height: 5vh;
   min-height: 36px;
-  background-color: green;
+  background-color: rgb(64, 21, 40);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@ body,
   padding: 4px 10px;
   border: 1px solid #fff;
   background: transparent;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   cursor: pointer;
   font-size: 14px;
@@ -96,7 +96,7 @@ body,
 /* SECTION — gold, 20% */
 .section {
   width: 20%;
-  background-color: gold;
+  background-color: #9f6276;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,9 +116,9 @@ body,
 .nav-link {
   display: block;
   padding: 8px 10px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgb(255, 255, 255);
   color: #000;
-  border: 1px solid #d4ac0d;
+  border: 1px solid rgb(81, 26, 39);
   text-decoration: underline;
   font-size: 16px;
 }
@@ -135,18 +135,16 @@ body,
 /* ARTICLE — blue, 60% */
 .article {
   width: 60%;
-  background-color: blue;
+  background-color: rgb(64, 21, 40);
   color: #000;
   padding: 18px;
   overflow-y: auto;
 }
 
 .article h1 {
-  color: #000;
+  color: #d03664;
   margin: 0 0 10px 0;
   font-size: 28px;
-  /* Подложка под заголовок — чтобы чёрный текст оставался читаемым
-     на синем фоне article согласно требованию ТЗ о цвете текста. */
   background: rgba(255, 255, 255, 0.85);
   padding: 6px 12px;
   display: inline-block;
@@ -168,18 +166,19 @@ body,
 .article label,
 .article span,
 .article div {
-  color: #000;
+  color: #55162c;
 }
 
 .article a {
-  /* Ссылки оформляются по умолчанию (требование ТЗ). */
+  color: #007bff;       
+  text-decoration: none; 
 }
 
 .page-block {
   background: rgba(255, 255, 255, 0.85);
   padding: 14px 18px;
   margin-bottom: 12px;
-  border: 1px solid #fff;
+  border: 1px solid #ff6e6e;
 }
 
 .page-block h2 {
@@ -188,15 +187,15 @@ body,
 }
 
 .news-item {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 232, 255, 0.85);
   padding: 10px 14px;
   margin-bottom: 8px;
-  border-left: 4px solid gold;
+  border-left: 4px solid rgb(64, 21, 40);
 }
 
 .news-item .news-date {
   font-size: 12px;
-  color: #555;
+  color: #601e49;
   margin-top: 4px;
 }
 
@@ -204,9 +203,9 @@ body,
   display: inline-block;
   margin-top: 8px;
   padding: 8px 14px;
-  background: gold;
-  color: #000;
-  border: 1px solid #000;
+  background: rgb(255, 255, 255);
+  color: #964d68;
+  border: 1px solid #ffe5ee;
   text-decoration: underline;
   font-weight: bold;
   cursor: pointer;
@@ -216,22 +215,23 @@ body,
 .products-table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: #ffffff;
 }
 
 .products-table th,
 .products-table td {
-  border: 1px solid #000;
+  border: 1px solid #000000;
   padding: 8px;
   text-align: left;
   font-size: 14px;
 }
 
 .products-table th {
-  background: gold;
+  background: #542837;
 }
 
 .contact-form {
+  color: #964d68;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -249,9 +249,9 @@ body,
 .contact-form textarea {
   font: inherit;
   padding: 6px 8px;
-  border: 1px solid #000;
-  background: #fff;
-  color: #000;
+  border: 1px solid #542837;
+  background: #ffffff;
+  color: #ff2121;
 }
 
 .contact-form textarea {
@@ -262,7 +262,7 @@ body,
 .contact-form button {
   align-self: flex-start;
   padding: 8px 14px;
-  background: gold;
+  background: rgb(250, 156, 184);
   color: #000;
   border: 1px solid #000;
   font-weight: bold;
@@ -272,7 +272,7 @@ body,
 .contact-thanks {
   margin-top: 10px;
   background: #d4edda;
-  color: #155724;
+  color: #472e43;
   padding: 8px 12px;
   border: 1px solid #155724;
 }
@@ -280,7 +280,7 @@ body,
 /* ASIDE — darkturquoise, 20% */
 .aside {
   width: 20%;
-  background-color: darkturquoise;
+  background-color: #9f6276;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -352,8 +352,8 @@ body,
 .footer {
   height: 6vh;
   min-height: 32px;
-  background-color: red;
-  color: #000;
+  background-color: rgb(86, 36, 67);
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;

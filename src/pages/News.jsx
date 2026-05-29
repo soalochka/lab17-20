@@ -50,6 +50,7 @@ export default function News({ t }) {
           <div>{it.text}</div>
           <div className="news-date">{it.date}</div>
         </div>
+        
       ))}
     </div>
   );

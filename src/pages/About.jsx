@@ -1,7 +1,5 @@
 import React from 'react';
 
-// Страница «Об авторе» — описание автора/магазина. По ТЗ h1 содержит
-// «Южный федеральный университет».
 export default function About({ t }) {
   const data = t.pages.about;
   return (

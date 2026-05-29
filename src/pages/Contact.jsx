@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-// Страница «Обратная связь» — телефон, WhatsApp, Telegram + форма отправки вопроса.
-// По ТЗ p содержит «+7 908 517 50 43».
+// Страница «Обратная связь» — телефон, WhatsApp, Telegram + форма отправки вопроса
 export default function Contact({ t }) {
   const data = t.pages.contact;
   const [name, setName] = useState('');

@@ -5,9 +5,7 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Products from './pages/Products.jsx';
 
-// Маршрутизация без библиотек: страница хранится в состоянии.
-// По умолчанию открывается «Новости» — этого требует тест-кейс из ТЗ
-// (адрес localhost:3000 -> страница «Новости»).
+
 const PAGES = ['news', 'about', 'contact', 'products'];
 
 export default function App() {
@@ -34,7 +32,6 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* HEADER — зелёный, логотип по центру */}
       <header className="header">
         <div className="header-inner">
           <div className="logo" aria-label={t.siteTitle}>
@@ -67,9 +64,9 @@ export default function App() {
         </div>
       </header>
 
-      {/* MAIN — 89% высоты, делится на 3 колонки 20% / 60% / 20% */}
+{/* MAIN — 89% высоты, делится на 3 колонки 20% / 60% / 20% */}
       <main className="main">
-        {/* SECTION — золотой, слева. Сверху ссылки на страницы, снизу баннеры. */}
+       
         <section className="section">
           <nav className="nav" aria-label="Главное меню">
             <ul>
@@ -95,10 +92,11 @@ export default function App() {
           </div>
         </section>
 
-        {/* ARTICLE — синий, центральная часть. Контент текущей страницы. */}
         <article className="article">{renderPage()}</article>
 
-        {/* ASIDE — бирюзовый, справа. Сверху облако тегов, снизу баннер. */}
+
+
+
         <aside className="aside">
           <div className="tagcloud">
             <div className="tagcloud-title">{t.aside.tagsTitle}</div>
@@ -117,7 +115,6 @@ export default function App() {
         </aside>
       </main>
 
-      {/* FOOTER — красный, контактная информация */}
       <footer className="footer">
         <div>{t.footer.company}</div>
         <div>{t.footer.address}</div>

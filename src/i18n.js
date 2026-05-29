@@ -1,19 +1,18 @@
-// Локализация: русский и английский.
-// Согласно ТЗ пользователь должен иметь возможность переключать язык сайта.
+
 
 export const translations = {
   ru: {
-    siteTitle: 'Букет настроения',
+    siteTitle: 'БУТОН',
     siteTagline: 'Магазин цветов и букетов',
     nav: {
-      news: 'Новости',
-      about: 'Об авторе',
+      news: 'Главная',
+      about: 'О нас',
       contact: 'Обратная связь',
-      products: 'Продукты и услуги'
+      products: 'Каталог'
     },
     aside: {
       tagsTitle: 'Облако тегов',
-      tags: ['розы', 'тюльпаны', 'пионы', 'свадьба', 'доставка', 'букеты', 'композиции', '8 марта', 'день рождения', 'подарок'],
+      tags: ['розы', 'тюльпаны', 'пионы', 'свадьба', 'доставка', 'букеты', 'композиции', '8 марта', 'день рождения', 'подарок','день рождения50лет','день ПОБЕДЫ','день МАТЕРИ','ЛюбимойДевушке'],
       bannerTitle: 'Реклама',
       bannerText: 'Бесплатная доставка по городу при заказе от 3 000 ₽'
     },
@@ -22,16 +21,15 @@ export const translations = {
       bannerText: 'Скидка 15% на свадебные букеты до конца месяца'
     },
     footer: {
-      company: 'ИП Корякина А.С. · «Букет настроения»',
+      company: 'ИП Корякина С.С. · «БУТОН»',
       address: 'г. Ростов-на-Дону, ул. Большая Садовая, 105',
       phone: 'Тел.: +7 908 517 50 43',
-      author: 'Разработка сайта: Корякина Анна · 2026'
+      author: 'Разработка сайта 2026'
     },
     pages: {
       news: {
-        h1: 'Отличная новость.',
-        p: 'Уже тепло!',
-        intro: 'Свежие букеты к весеннему сезону уже в продаже. Заходите в магазин или оформляйте доставку онлайн.',
+        h1: 'СВЕЖИЕ цветы, по ДОУСТУПНЫМ ценам',
+        intro: 'УСПЕЙТЕ К ВЕСЕННЕЙ РАСПРОДАЖЕ! ТЮЛЬПАНЫ ПОД ЗАКАЗ ОТ 199 Р ЗА 1 ШТ',
         items: [
           { title: 'Майская коллекция', text: 'Новая весенняя линейка букетов с пионами и тюльпанами уже в продаже.', date: '12 мая 2026' },
           { title: 'Бесплатная доставка', text: 'Дарим бесплатную доставку по городу при заказе от 3 000 ₽.', date: '5 мая 2026' },
@@ -41,9 +39,9 @@ export const translations = {
         downloadFile: 'Прайс-лист_Букет_настроения.txt'
       },
       about: {
-        h1: 'Южный федеральный университет',
+        h1: 'О БУТОНЕ',
         subtitle: 'О нашем магазине',
-        text: 'Магазин «Букет настроения» работает в Ростове-на-Дону с 2019 года. Мы собираем авторские букеты, выполняем оформление свадеб и доставку цветов по городу. Студенческий проект студентки ЮФУ Корякиной Анны.',
+        text: 'Магазин «БУТОН» работает в Ростове-на-Дону с 2019 года. Мы собираем авторские букеты, выполняем оформление свадеб и доставку цветов по городу. Каждый букет наполнен заботой!',
         achievementsTitle: 'Достижения',
         achievements: [
           'Более 5 000 счастливых клиентов',
@@ -57,21 +55,21 @@ export const translations = {
         phoneLabel: 'Телефон',
         phone: '+7 908 517 50 43',
         whatsapp: 'WhatsApp: +7 908 517 50 43',
-        telegram: 'Telegram: @buket_nastroeniya',
-        formTitle: 'Форма для отправки вопроса',
+        telegram: 'Telegram: @bouton_rnd',
+        formTitle: 'ОСТАВЬТЕ ЗАЯВКУ',
         nameLabel: 'Имя',
         emailLabel: 'E-mail',
-        messageLabel: 'Ваш вопрос',
+        messageLabel: 'ВАШ ВОПРОС',
         submitLabel: 'Отправить',
-        thanks: 'Спасибо! Ваш вопрос отправлен.'
+        thanks: 'Спасибо!'
       },
       products: {
-        h1: 'Продукты и услуги',
-        intro: 'Авторские букеты, готовые композиции и услуги флористов.',
+        h1: 'КАТАЛОГ',
+        intro: 'Авторские букеты, готовые композиции и услуги флористов',
         table: {
           name: 'Наименование',
           desc: 'Описание',
-          price: 'Цена, ₽'
+          price: 'Цена (₽)'
         },
         rows: [
           { name: 'Букет «Весеннее настроение»', desc: 'Тюльпаны, фрезии, эвкалипт', price: 2500 },
@@ -87,17 +85,17 @@ export const translations = {
     langSwitchTitle: 'Переключить на английский'
   },
   en: {
-    siteTitle: 'Mood Bouquet',
+    siteTitle: 'BOUTON',
     siteTagline: 'Flower and bouquet shop',
     nav: {
       news: 'News',
-      about: 'About the author',
+      about: 'About BOUTON',
       contact: 'Contact',
       products: 'Products and services'
     },
     aside: {
       tagsTitle: 'Tag cloud',
-      tags: ['roses', 'tulips', 'peonies', 'wedding', 'delivery', 'bouquets', 'arrangements', 'March 8', 'birthday', 'gift'],
+      tags: ['roses', 'tulips', 'peonies', 'wedding', 'delivery', 'bouquets', 'compositions', '8 March', 'birthday', 'gift', '50th birthday', 'Victory Day', 'Mothers Day', 'To My Beloved'],
       bannerTitle: 'Promo',
       bannerText: 'Free delivery in the city for orders over 3 000 ₽'
     },
@@ -106,16 +104,15 @@ export const translations = {
       bannerText: '15% off all wedding bouquets through the end of the month'
     },
     footer: {
-      company: 'IP Koriakina A.S. · Mood Bouquet',
+      company: 'IP Koriakina S.A. · BOUTON',
       address: '105 Bolshaya Sadovaya St., Rostov-on-Don',
       phone: 'Phone: +7 908 517 50 43',
-      author: 'Website built by Anna Koriakina · 2026'
+      author: 'Website built 2026'
     },
     pages: {
       news: {
-        h1: 'Great news.',
-        p: 'It is finally warm!',
-        intro: 'Spring bouquets are now in store. Visit us or order online for delivery.',
+        h1: 'FRESH flowers at affordable prices!',
+        intro: 'SAVE THESE FOR SPRING SALE! TULIPS BY ORDER FROM 199 RUB FOR 1 PCS',
         items: [
           { title: 'May collection', text: 'New spring lineup of peony and tulip bouquets is on sale.', date: 'May 12, 2026' },
           { title: 'Free delivery', text: 'Free city delivery on orders over 3 000 ₽.', date: 'May 5, 2026' },
@@ -125,9 +122,9 @@ export const translations = {
         downloadFile: 'Mood_Bouquet_price_list.txt'
       },
       about: {
-        h1: 'Southern Federal University',
+        h1: 'WHO ARE WE?',
         subtitle: 'About our shop',
-        text: 'Mood Bouquet has been operating in Rostov-on-Don since 2019. We craft signature bouquets, decorate weddings and deliver flowers across the city. Student project by Anna Koriakina (SFU).',
+        text: 'BOUTON has been operating in Rostov-on-Don since 2019. We craft signature bouquets, decorate weddings and deliver flowers across the city. Each bouquet is filled with care!',
         achievementsTitle: 'Achievements',
         achievements: [
           'More than 5,000 happy clients',
@@ -141,13 +138,13 @@ export const translations = {
         phoneLabel: 'Phone',
         phone: '+7 908 517 50 43',
         whatsapp: 'WhatsApp: +7 908 517 50 43',
-        telegram: 'Telegram: @buket_nastroeniya',
+        telegram: 'Telegram: @bouton_rnd',
         formTitle: 'Send us a question',
         nameLabel: 'Name',
         emailLabel: 'E-mail',
         messageLabel: 'Your question',
         submitLabel: 'Send',
-        thanks: 'Thank you! Your question has been sent.'
+        thanks: 'Thank you!'
       },
       products: {
         h1: 'Products and services',
@@ -155,7 +152,7 @@ export const translations = {
         table: {
           name: 'Name',
           desc: 'Description',
-          price: 'Price, ₽'
+          price: 'Price ( ₽)'
         },
         rows: [
           { name: 'Bouquet "Spring Mood"', desc: 'Tulips, freesias, eucalyptus', price: 2500 },
